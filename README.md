@@ -1,2 +1,2 @@
 # pwa-webpack-js
-AWD
+SINGLE PAGE APLICATION VANILLA JS
