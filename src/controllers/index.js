@@ -1,9 +1,9 @@
 import Home from "./home.controller.js";
-import Posts from "./post.controller.js";
+import Posts from "./posts.controller.js";
 import notFound from "./404.controller.js";
 const pages={
     home:Home,
-    post :Posts,
+    posts:Posts,
     notFound:notFound
 }
 export {pages};

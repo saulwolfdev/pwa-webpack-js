@@ -1,14 +1,18 @@
 import {pages} from "../controllers/index";
 
-let content=document.querySelector("#root");
-
-
-const router=(route)=>{
+const router= async(route)=>{
+    let content=document.querySelector("#root");
     content.innerHTML="";
 switch (route) {
     case "#/":{
-       return content.appendChild(pages.home());
+       return content.appendChild(await pages.home());
+      
     }
+    default:{
+        console.log("nada")
+    }
+    case"#/posts":
+    return content.appendChild(pages.posts());
        
         // case "#/posts":
         // return console.log("home")
@@ -17,9 +21,6 @@ switch (route) {
         // default:
         // return console.log("404")
 }    
-    
-    
-    
-    
+
 }
 export {router};
