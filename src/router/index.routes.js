@@ -1,4 +1,4 @@
-import Home from "../controllers/index.controller";
+import {pages} from "../controllers/index";
 
 let content=document.querySelector("#root");
 
@@ -6,9 +6,8 @@ let content=document.querySelector("#root");
 const router=(route)=>{
     content.innerHTML="";
 switch (route) {
-
     case "#/":{
-       return content.appendChild(Home());
+       return content.appendChild(pages.home());
     }
        
         // case "#/posts":
