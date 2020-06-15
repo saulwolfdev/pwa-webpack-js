@@ -2,11 +2,11 @@
     "name": "pwa-webpack-js",
     "version": "1.0.0",
     "description": "AWD",
-    "main": "src/mai.js",
+    "main": "src/main.js",
     "scripts": {
         "build": "npm run clean && webpack --config webpack/webpack.config.js -p --env=prod",
-        "start": "webpack-dev-server --config webpack/webpack.config.js --env=dev --open",
-        "dev": "webpack-dev-server --open",
+        "dev": "webpack-dev-server --config webpack/webpack.config.js --env=dev --open",
+        "start": "webpack-dev-server --open",
         "clean": "rimraf dist"
     },
     "repository": {
@@ -20,7 +20,9 @@
         "url": "https://github.com/saulwolfdev/pwa-webpack-js/issues"
     },
     "homepage": "https://github.com/saulwolfdev/pwa-webpack-js#readme",
-    "dependencies": {},
+    "dependencies": {
+        "npm-cli": "^0.1.0"
+    },
     "devDependencies": {
         "@babel/cli": "^7.10.1",
         "@babel/core": "^7.10.2",

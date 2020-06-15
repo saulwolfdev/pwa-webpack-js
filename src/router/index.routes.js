@@ -8,18 +8,10 @@ switch (route) {
        return content.appendChild(await pages.home());
       
     }
-    default:{
-        console.log("nada")
-    }
     case"#/posts":
-    return content.appendChild(pages.posts());
-       
-        // case "#/posts":
-        // return console.log("home")
-        // case "#/product":
-        //     return console.log("home")
-        // default:
-        // return console.log("404")
+    return content.appendChild(await pages.posts());
+    default:
+    return content.appendChild(await pages.notFound());
 }    
 
 }
